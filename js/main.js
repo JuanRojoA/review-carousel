@@ -11,7 +11,7 @@ let count = 0;
 
 async function readJSON() {
   let response;
-  response = await fetch("./data.json");
+  response = await fetch("./js/data.json");
   jsonData = await response.json();
   arrayLength = await jsonData.reviews.length;
   renderReview();
